@@ -2,6 +2,9 @@
 
 
 
+from optparse import Values
+
+
 def calc(a,b):
     return a+b, a*b
 
@@ -53,3 +56,24 @@ print(id(mydevice))
 
 del mydevice["아마존"]
 print(device)
+
+globals()
+
+
+def swap(a, b):
+    return (b, a)
+
+abc = (1,2)
+
+cba = swap(*abc)
+
+
+print(abc, cba)
+
+print(id(abc))
+
+ab = ["a","b","c"]
+aa = ab[:]
+
+
+print(id(aa), id(ab))
