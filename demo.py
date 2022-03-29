@@ -27,4 +27,12 @@ list = [1, 2, 3]
 print(id(list))
 list.append(4)
 print(id(list))
+import copy
 
+demo = {"apple":"red", "kiwi":"green"}
+
+demo2=copy.deepcopy(demo)
+print(demo)
+print(demo2)
+print(id(demo))
+print(id(demo2))
